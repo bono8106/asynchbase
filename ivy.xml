@@ -1,0 +1,27 @@
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd"
+       xmlns:m="http://ant.apache.org/ivy/maven">
+
+  <info organisation="org.hbase" module="hbaseasync" revision="1.0"/>
+
+  <!-- The defaultconfmapping below excludes maven optional dependencies. -->
+  <configurations defaultconfmapping="default->default"/>
+
+  <publications>
+    <artifact name="${ivy.module}" type="jar" ext="jar"/>
+    <artifact name="${ivy.module}" type="source" ext="jar" conf="default" m:classifier="sources"/>
+    <artifact name="${ivy.module}" type="javadoc" ext="jar" conf="default" m:classifier="javadoc"/>
+  </publications>
+
+  <dependencies>
+    <dependency org="org.slf4j" name="log4j-over-slf4j" rev="1.6.1"/>
+    <dependency org="com.stumbleupon" name="suasync" rev="1.0-+"/>
+    <dependency org="ch.qos.logback" name="logback-classic" rev="0.9.24"/>
+    <dependency org="org.jboss.netty" name="netty" rev="3.2.2.Final"/>
+    <dependency org="org.apache.zookeeper" name="zookeeper" rev="3.3.1">
+      <exclude org="log4j" module="log4j"/>
+      <exclude org="jline" module="jline"/>
+    </dependency>
+  </dependencies>
+
+</ivy-module>

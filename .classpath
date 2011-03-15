@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/async"/>
+	<classpathentry kind="con" path="org.apache.ivyde.eclipse.cpcontainer.IVYDE_CONTAINER/?ivyXmlPath=ivy.xml&amp;confs=*&amp;ivySettingsPath=%24%7Bworkspace_loc%3Aasynchbase%7D%2Fivysettings.xml&amp;loadSettingsOnDemand=false&amp;propertyFiles="/>
+	<classpathentry kind="lib" path="third_party/log4j-over-slf4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="third_party/logback-classic-0.9.24.jar"/>
+	<classpathentry kind="lib" path="third_party/logback-core-0.9.24.jar"/>
+	<classpathentry kind="lib" path="third_party/netty-3.2.2.Final.jar"/>
+	<classpathentry kind="lib" path="third_party/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="third_party/zookeeper-3.3.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
